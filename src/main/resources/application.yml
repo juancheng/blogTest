@@ -1,0 +1,25 @@
+server:
+  port: 8081
+  servlet:
+    context-path: '/'
+
+# 数据库的配置
+jdbc.driver: com.mysql.cj.jdbc.Driver
+jdbc.url: jdbc:mysql://106.12.99.96:3306/ownBlog?useUnicode=true&characterEncoding=utf8&useSSL=false
+jdbc.username: hym
+jdbc.password: 123456
+
+# Mybatis的配置
+mybatis_config_file_path: mybatis-config.xml
+entity_package: cn.hanyingming.blog.entity
+mapper_path: /mapperxml/*.xml
+
+dc.log.network.req.timeout.value: 500
+
+# PageHelper配置
+#pagehelper:
+#  offsetAsPageNum: true
+#  rowBoundsWithCount: true
+#  reasonable: true
+#  returnPageInfo: true
+#  params: count=countSql
