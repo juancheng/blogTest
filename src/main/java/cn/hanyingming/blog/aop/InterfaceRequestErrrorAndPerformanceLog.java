@@ -49,7 +49,7 @@ public class InterfaceRequestErrrorAndPerformanceLog {
                 logger.error(pjp.getSignature()+" 接口记录返回结果失败！，原因为：{}",ex.getMessage());
             }
             Long consumeTime = stopwatch.stop().elapsed(TimeUnit.MILLISECONDS);
-            int a = 10/0;
+//            int a = 10/0;
             logger.info("耗时：" + consumeTime + "(毫秒).");
             //当接口请求时间大于3秒时，标记为异常调用时间，并记录入库
             if(consumeTime > performanceBadValue){

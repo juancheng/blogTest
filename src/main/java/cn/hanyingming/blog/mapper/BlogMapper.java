@@ -1,6 +1,6 @@
 package cn.hanyingming.blog.mapper;
 import java.util.List;
-import cn.hanyingming.blog.entity.Blog;import org.apache.ibatis.annotations.Param;
+import cn.hanyingming.blog.entity.Blog;
 
 public interface BlogMapper {
     int deleteByPrimaryKey(String id);

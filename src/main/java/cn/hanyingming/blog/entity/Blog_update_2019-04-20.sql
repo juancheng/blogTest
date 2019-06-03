@@ -1,2 +1,0 @@
-ALTER TABLE blog
-	ADD praise INT(11) NOT NULL DEFAULT 0 COMMENT 'praise';
