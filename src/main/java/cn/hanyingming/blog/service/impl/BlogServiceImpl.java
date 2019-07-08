@@ -32,7 +32,17 @@ public class BlogServiceImpl implements BlogService {
 
     @Override
     public BaseResult<Blog> saveBlog(Blog blog) {
-        int effectRows = blogMapper.saveBlog(blog);
+        int effectRows = blogMapper.insertSelective(blog);
+        BaseResult<Blog> baseResult = new BaseResult<>();
+        baseResult.setCode(200);
+        baseResult.setData(blog);
+        baseResult.setMessage(null);
+        return baseResult;
+    }
+
+    @Override
+    public BaseResult<Blog> getBlogById(Integer id) {
+        Blog blog = blogMapper.selectByPrimaryKey(id);
         BaseResult<Blog> baseResult = new BaseResult<>();
         baseResult.setCode(200);
         baseResult.setData(blog);

@@ -9,17 +9,40 @@ import lombok.ToString;
 @Setter
 @ToString
 public class Blog implements Serializable {
-    private String id;
+    /**
+     * id
+     */
+    private Integer id;
 
+    /**
+     * avatar
+     */
+    private String avatar;
+
+    /**
+     * title
+     */
     private String title;
 
+    /**
+     * summary
+     */
     private String summary;
 
-    private String content;
+    /**
+     * mdContent
+     */
+    private String mdContent;
 
+    /**
+     * htmlContent
+     */
+    private String htmlContent;
+
+    /**
+     * readnum
+     */
     private Integer readnum;
-
-    private String avatar;
 
     private static final long serialVersionUID = 1L;
 }

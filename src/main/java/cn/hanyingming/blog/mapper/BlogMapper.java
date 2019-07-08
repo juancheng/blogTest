@@ -1,21 +1,19 @@
 package cn.hanyingming.blog.mapper;
-import java.util.List;
-import cn.hanyingming.blog.entity.Blog;
+
+import cn.hanyingming.blog.entity.Blog;import java.util.List;
 
 public interface BlogMapper {
-    int deleteByPrimaryKey(String id);
+    int deleteByPrimaryKey(Integer id);
 
     int insert(Blog record);
 
     int insertSelective(Blog record);
 
-    Blog selectByPrimaryKey(String id);
+    Blog selectByPrimaryKey(Integer id);
 
     int updateByPrimaryKeySelective(Blog record);
 
     int updateByPrimaryKey(Blog record);
 
     List<Blog> findByPage();
-
-    int saveBlog(Blog record);
 }

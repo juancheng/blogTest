@@ -7,7 +7,7 @@ server:
 jdbc.driver: com.mysql.cj.jdbc.Driver
 jdbc.url: jdbc:mysql://106.12.99.96:3306/ownBlog?useUnicode=true&characterEncoding=utf8&useSSL=false
 jdbc.username: hym
-jdbc.password: 123456
+jdbc.password: 123
 
 # Mybatis的配置
 mybatis_config_file_path: mybatis-config.xml
@@ -18,8 +18,8 @@ dc.log.network.req.timeout.value: 500
 
 
 # 百度Bos配置
-baidu.accss_key_id: 1f27cd56b8f1a41d8981b581191ff1d179 # 用户的Access Key ID
-baidu.access_key: 2898ef11a509c4dafa8c2cedda470545b8 # 用户的Secret Access Key
+baidu.accss_key_id: f27cd56b8f1a41d8981b581191ff1d17 # 用户的Access Key ID
+baidu.access_key: 1898ef11a509c4dafa8c2cedda470545bf # 用户的Secret Access Key
 baidu.endpoint: http://sts.bj.baidubce.com # 用户自己指定的域名
 
 # PageHelper配置

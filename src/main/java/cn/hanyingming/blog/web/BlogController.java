@@ -27,4 +27,9 @@ public class BlogController {
     public BaseResult saveBlog(@RequestBody Blog blog) {
         return blogService.saveBlog(blog);
     }
+
+    @GetMapping("/getBlogById")
+    public BaseResult getBlogById(@RequestParam(value = "id") Integer id) {
+        return blogService.getBlogById(id);
+    }
 }

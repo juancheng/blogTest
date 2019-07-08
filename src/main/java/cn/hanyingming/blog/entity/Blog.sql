@@ -1,0 +1,12 @@
+-- auto Generated on 2019-07-07
+-- DROP TABLE IF EXISTS blog;
+CREATE TABLE blog(
+	id INT (11) NOT NULL AUTO_INCREMENT COMMENT 'id',
+	avatar VARCHAR (50) NOT NULL DEFAULT '' COMMENT 'avatar',
+	title VARCHAR (50) NOT NULL DEFAULT '' COMMENT 'title',
+	summary VARCHAR (50) NOT NULL DEFAULT '' COMMENT 'summary',
+	md_content VARCHAR (50) NOT NULL DEFAULT '' COMMENT 'mdContent',
+	html_content VARCHAR (50) NOT NULL DEFAULT '' COMMENT 'htmlContent',
+	readnum INT (11) NOT NULL DEFAULT -1 COMMENT 'readnum',
+	PRIMARY KEY (id)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT 'blog';
